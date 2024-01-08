@@ -1,7 +1,7 @@
 ---
 title: "에너지사용량 자료 분석"
-author: "한번 확인해보기"
-format: dashboard
+author: "전현지"
+format: asciidoc
 execute: 
   enabled: true
   cache: false

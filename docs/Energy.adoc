@@ -1,15 +1,8 @@
----
-title: "에너지사용량 자료 분석"
-author: "전현지"
-format: asciidoc
-execute: 
-  enabled: true
-  cache: false
-  freeze: false
-  error: true
----
+= 에너지사용량 자료 분석
+전현지
 
-```{python}
+[source,python,cell-code]
+----
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -53,22 +46,32 @@ df2 = df_left.merge(
     .rename({'인천광역시-남구':'인천광역시-미추홀구'})\
     .reset_index()
 ).drop(['on'],axis=1)
-```
+----
 
-# 데이터탐색
+....
+/tmp/ipykernel_44268/1516935476.py:22: FutureWarning:
 
-```{python}
-#| title: 에너지사용량 자료 
+DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+....
+
+== 데이터탐색
+
+[source,python,cell-code]
+----
 import itables 
 itables.show(df2,showIndex=False)
-```
+----
 
-# 시각화 {orientation="columns" scrolling="true"}
+....
+ModuleNotFoundError: No module named 'itables'
+....
 
-## Column {width=50%}
+== 시각화
 
-```{python}
-#| title: 2018년도 전기사용량 (전국)
+=== Column
+
+[source,python,cell-code]
+----
 fig = px.choropleth_mapbox(
     geojson = local_dict,
     featureidkey = 'properties.code',
@@ -83,12 +86,20 @@ fig = px.choropleth_mapbox(
     zoom=6,
 )
 fig.show(config={'scrollZoom':False})
-```
+----
 
-## Column {width=50%}
+....
+Unable to display output for mime type(s): text/html
+....
 
-```{python}
-#| title: 2018~2019년도 전기사용량 (서울)
+....
+Unable to display output for mime type(s): text/html
+....
+
+=== Column
+
+[source,python,cell-code]
+----
 seoul_dict = local_dict.copy() 
 seoul_dict['features'] = [l for l in seoul_dict['features'] if l['properties']['code'][:2] == '11']
 fig = px.choropleth_mapbox(
@@ -106,10 +117,14 @@ fig = px.choropleth_mapbox(
     zoom=9,
 )
 fig.show(config={'scrollZoom':False})
-```
+----
 
-```{python}
-#| title: 2018~2019년도 에너지사용량 (전국)
+....
+Unable to display output for mime type(s): text/html
+....
+
+[source,python,cell-code]
+----
 fig = df2.drop(['code_local','code'],axis=1)\
 .set_index(['년도','시도','지역','건물동수','연면적']).stack().reset_index()\
 .rename({'level_5':'에너지종류', 0:'에너지사용량'},axis=1)\
@@ -127,4 +142,8 @@ fig.update_layout(
     xaxis2_domain=[0.35, 0.60],
     xaxis3_domain=[0.70, 0.95]
 )
-```
+----
+
+....
+Unable to display output for mime type(s): text/html
+....
