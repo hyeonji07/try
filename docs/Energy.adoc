@@ -49,9 +49,7 @@ df2 = df_left.merge(
 ----
 
 ....
-/tmp/ipykernel_44268/1516935476.py:22: FutureWarning:
-
-DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+ModuleNotFoundError: No module named 'numpy'
 ....
 
 == 데이터탐색
@@ -89,11 +87,7 @@ fig.show(config={'scrollZoom':False})
 ----
 
 ....
-Unable to display output for mime type(s): text/html
-....
-
-....
-Unable to display output for mime type(s): text/html
+NameError: name 'px' is not defined
 ....
 
 === Column
@@ -120,7 +114,7 @@ fig.show(config={'scrollZoom':False})
 ----
 
 ....
-Unable to display output for mime type(s): text/html
+NameError: name 'local_dict' is not defined
 ....
 
 [source,python,cell-code]
@@ -145,5 +139,5 @@ fig.update_layout(
 ----
 
 ....
-Unable to display output for mime type(s): text/html
+NameError: name 'df2' is not defined
 ....

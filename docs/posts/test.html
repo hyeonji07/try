@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="<84><98><84><80>">
+<meta name="dcterms.date" content="2024-01-08">
 
-<title>try - 서버 설정????????????????</title>
+<title>try - Day1: 실습 - 실습12</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,14 +142,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">서버 설정????????????????</h1>
+      <h1 class="title">Day1: <ec>&lt;8b&gt;<a4><ec>&lt;8a&gt;<b5> - <ec>&lt;8b&gt;<a4><ec>&lt;8a&gt;<b5>12</b5></ec></a4></ec></b5></ec></a4></ec></h1>
                       </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><ec><a0>&lt;84&gt;<ed>&lt;98&gt;&lt;84&gt;<ec><a7>&lt;80&gt; </a7></ec></ed></a0></ec></p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 8, 2024</p>
+      </div>
+    </div>
     
       
     </div>
@@ -163,43 +177,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p><code>-</code> 서버 비밀번호 바꾸기 - passwd root</p>
-<section id="anaconda" class="level1">
-<h1>Anaconda</h1>
-<p><code>-</code> 다운로드 - wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh - bash Anaconda3-2023.09-0-Linux-x86_64.sh</p>
-<p><code>-</code> 가상환경 생성 - conda create -n 가상환경이름 python=원하는 버전 - ex) conda create -n py310 python=3.10</p>
-</section>
-<section id="jupyter" class="level1">
-<h1>Jupyter</h1>
-<section id="jupyter-설치" class="level2">
-<h2 class="anchored" data-anchor-id="jupyter-설치">1. jupyter 설치</h2>
 <ul>
-<li>원하는 가상환경에 jupyter lab, notebook 설치하기</li>
-<li><em>so, 꼭 conda activate py310 해줘야 함.</em></li>
+<li><ec>&lt;9d&gt;<b4><ea><b1><b0><ec>&lt;8a&gt;<a8> <ea><b7><b8><eb>&lt;83&gt;<a5> <ea><b7><b8><eb>&lt;83&gt;<a5> <ec><a0>&lt;80&gt;<eb>&lt;83&gt;<a5> <e3>&lt;85&gt;&lt;8e&gt;<e3>&lt;85&gt;&lt;8e&gt;..</e3></e3></a5></eb></a0></ec></a5></eb></b8></b7></ea></a5></eb></b8></b7></ea></a8></ec></b0></b1></ea></b4></ec></li>
 </ul>
-<p><code>-</code> 설치 방법 - conda install -c conda-forge jupyterlab - conda install -c conda-forge notebook</p>
-<p><code>-</code> jupyter notebook 비밀번호 설정 - jupyter notebook password</p>
-</section>
-<section id="jupyter를-port에-연결" class="level2">
-<h2 class="anchored" data-anchor-id="jupyter를-port에-연결">2. jupyter를 port에 연결</h2>
-<p><code>-</code> step1 - root 유저 홈에서 ls -a - .jupyter 환경에 들어가기 - jupyter_notebook_config.py 열기 - 없다면? jupyter notebook –generate-config</p>
-<p><code>-</code> step 2 : jupyter_notebook_config.py 편집하기 (by vi)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.ip <span class="op">=</span> <span class="st">'0.0.0.0'</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.port <span class="op">=</span> <span class="dv">8888</span> <span class="co"># 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.allow_root <span class="op">=</span> <span class="va">True</span> </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>c.NotebookApp.allow_remote_access <span class="op">=</span> <span class="va">True</span> <span class="co"># 당장필요한건 아닌데요.. 해놓으세여 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3</code></pre>
 </div>
-</section>
-<section id="주피터랩-평생-켜놓기" class="level2">
-<h2 class="anchored" data-anchor-id="주피터랩-평생-켜놓기">3. 주피터랩 평생 켜놓기</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>nohup jupyter lab <span class="op">--</span>ip<span class="op">=</span><span class="st">"0.0.0.0"</span> <span class="op">--</span>port<span class="op">=</span>{MY<span class="op">-</span>PORT} <span class="op">--</span>allow<span class="op">-</span>root <span class="op">&gt;</span> <span class="op">/</span>dev<span class="op">/</span>null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="op">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

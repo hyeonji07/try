@@ -11,7 +11,42 @@
     "href": "index.html",
     "title": "제목은 블로그",
     "section": "",
-    "text": "서버 설정\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 8, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "서버 설정????????????????\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 8, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nDay1: 실습 - 실습12\n\n\n\n\n\n\n\n\n\n\n\n\nJan 8, 2024\n\n\n전현지\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 5, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/test.html",
+    "href": "posts/test.html",
+    "title": "Day1: <8b><8a> - <8b><8a>12",
+    "section": "",
+    "text": "&lt;9d&gt;&lt;8a&gt; &lt;83&gt; &lt;83&gt; &lt;80&gt;&lt;83&gt; &lt;85&gt;&lt;8e&gt;&lt;85&gt;&lt;8e&gt;..\n\n\nc(1,2,3)\n\n[1] 1 2 3"
+  },
+  {
+    "objectID": "posts/서버&주피터 설정.html",
+    "href": "posts/서버&주피터 설정.html",
+    "title": "서버 설정????????????????",
+    "section": "",
+    "text": "- 서버 비밀번호 바꾸기 - passwd root"
+  },
+  {
+    "objectID": "posts/서버&주피터 설정.html#jupyter-설치",
+    "href": "posts/서버&주피터 설정.html#jupyter-설치",
+    "title": "서버 설정????????????????",
+    "section": "1. jupyter 설치",
+    "text": "1. jupyter 설치\n\n원하는 가상환경에 jupyter lab, notebook 설치하기\nso, 꼭 conda activate py310 해줘야 함.\n\n- 설치 방법 - conda install -c conda-forge jupyterlab - conda install -c conda-forge notebook\n- jupyter notebook 비밀번호 설정 - jupyter notebook password"
+  },
+  {
+    "objectID": "posts/서버&주피터 설정.html#jupyter를-port에-연결",
+    "href": "posts/서버&주피터 설정.html#jupyter를-port에-연결",
+    "title": "서버 설정????????????????",
+    "section": "2. jupyter를 port에 연결",
+    "text": "2. jupyter를 port에 연결\n- step1 - root 유저 홈에서 ls -a - .jupyter 환경에 들어가기 - jupyter_notebook_config.py 열기 - 없다면? jupyter notebook –generate-config\n- step 2 : jupyter_notebook_config.py 편집하기 (by vi)\n\nc.NotebookApp.ip = '0.0.0.0'\nc.NotebookApp.port = 8888 # 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 \nc.NotebookApp.allow_root = True \nc.NotebookApp.allow_remote_access = True # 당장필요한건 아닌데요.. 해놓으세여"
+  },
+  {
+    "objectID": "posts/서버&주피터 설정.html#주피터랩-평생-켜놓기",
+    "href": "posts/서버&주피터 설정.html#주피터랩-평생-켜놓기",
+    "title": "서버 설정????????????????",
+    "section": "3. 주피터랩 평생 켜놓기",
+    "text": "3. 주피터랩 평생 켜놓기\n\nnohup jupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --allow-root &gt; /dev/null 2&gt;&1 &"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -19,34 +54,6 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/서버&주피터 설정.html",
-    "href": "posts/서버&주피터 설정.html",
-    "title": "서버 설정",
-    "section": "",
-    "text": "- 서버 비밀번호 바꾸기 - passwd root"
-  },
-  {
-    "objectID": "posts/서버&주피터 설정.html#jupyter-설치",
-    "href": "posts/서버&주피터 설정.html#jupyter-설치",
-    "title": "서버 설정",
-    "section": "1. jupyter 설치",
-    "text": "1. jupyter 설치\n\n원하는 가상환경에 jupyter lab, notebook 설치하기\nso, 꼭 conda activate py310 해줘야 함.\n\n- 설치 방법 - conda install -c conda-forge jupyterlab - conda install -c conda-forge notebook\n- jupyter notebook 비밀번호 설정 - jupyter notebook password"
-  },
-  {
-    "objectID": "posts/서버&주피터 설정.html#jupyter를-port에-연결",
-    "href": "posts/서버&주피터 설정.html#jupyter를-port에-연결",
-    "title": "서버 설정",
-    "section": "2. jupyter를 port에 연결",
-    "text": "2. jupyter를 port에 연결\n- step1 - root 유저 홈에서 ls -a - .jupyter 환경에 들어가기 - jupyter_notebook_config.py 열기 - 없다면? jupyter notebook –generate-config\n- step 2 : jupyter_notebook_config.py 편집하기 (by vi)\n\nc.NotebookApp.ip = '0.0.0.0'\nc.NotebookApp.port = 8888 # 8888아니구요. 본인이 쓸수 있는 포트중에서 좋아하는거 쓰세여 \nc.NotebookApp.allow_root = True \nc.NotebookApp.allow_remote_access = True # 당장필요한건 아닌데요.. 해놓으세여"
-  },
-  {
-    "objectID": "posts/서버&주피터 설정.html#주피터랩-평생-켜놓기",
-    "href": "posts/서버&주피터 설정.html#주피터랩-평생-켜놓기",
-    "title": "서버 설정",
-    "section": "3. 주피터랩 평생 켜놓기",
-    "text": "3. 주피터랩 평생 켜놓기\n\nnohup jupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --allow-root &gt; /dev/null 2&gt;&1 &"
   },
   {
     "objectID": "posts/welcome/index.html",
