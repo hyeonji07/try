@@ -5,7 +5,8 @@ date: "2024-01-05"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+This is the first post in a Quarto blog. 
+하이 하이 만나서 반갑슴매
 
 ![](thumbnail.jpg)
 
