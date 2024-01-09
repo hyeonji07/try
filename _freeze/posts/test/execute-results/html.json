@@ -1,10 +1,9 @@
 {
-  "hash": "89fa60e834a67872a7d335008979580e",
+  "hash": "723c77562a5ca9b15d1cbe8f87c8ba7c",
   "result": {
-    "markdown": "---\ntitle: \"Day1: <ec><8b><a4><ec><8a><b5> - <ec><8b><a4><ec><8a><b5>12\"\nauthor: \"<ec><a0><84><ed><98><84><ec><a7><80>\"\ndate: \"01/08/2024\"\n---\n\n\n- <ec><9d><b4><ea><b1><b0><ec><8a><a8> <ea><b7><b8><eb><83><a5> <ea><b7><b8><eb><83><a5> <ec><a0><80><eb><83><a5> <e3><85><8e><e3><85><8e>..\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc(1,2,3)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 1 2 3\n```\n:::\n:::",
-    "supporting": [
-      "test_files"
-    ],
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day1:test test test\"\nauthor: \"전현지\"\ndate: \"01/08/2024\"\n---\n\nhangeul lee an dae yo...\nwhyaron..i\n한글이 깨져요\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc(1,2,3,4)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 1 2 3 4\n```\n\n\n:::\n:::\n\nvi 로 수정한 한글 깨질까?\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

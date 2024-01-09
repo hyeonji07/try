@@ -49,7 +49,9 @@ df2 = df_left.merge(
 ----
 
 ....
-ModuleNotFoundError: No module named 'numpy'
+/tmp/ipykernel_57444/1516935476.py:22: FutureWarning:
+
+DataFrame.applymap has been deprecated. Use DataFrame.map instead.
 ....
 
 == 데이터탐색
@@ -60,9 +62,11 @@ import itables
 itables.show(df2,showIndex=False)
 ----
 
-....
-ModuleNotFoundError: No module named 'itables'
-....
+[cols=",,,,,,,,,",options="header",]
+|===
+|년도 |시도 |지역 |건물동수 |연면적 |에너지사용량(TOE)/전기 |에너지사용량(TOE)/도시가스 |에너지사용량(TOE)/지역난방 |code_local |code
+|Loading... (need https://mwouts.github.io/itables/troubleshooting.html[help]?) | | | | | | | | |
+|===
 
 == 시각화
 
@@ -87,7 +91,11 @@ fig.show(config={'scrollZoom':False})
 ----
 
 ....
-NameError: name 'px' is not defined
+Unable to display output for mime type(s): text/html
+....
+
+....
+Unable to display output for mime type(s): text/html
 ....
 
 === Column
@@ -114,7 +122,7 @@ fig.show(config={'scrollZoom':False})
 ----
 
 ....
-NameError: name 'local_dict' is not defined
+Unable to display output for mime type(s): text/html
 ....
 
 [source,python,cell-code]
@@ -139,5 +147,5 @@ fig.update_layout(
 ----
 
 ....
-NameError: name 'df2' is not defined
+Unable to display output for mime type(s): text/html
 ....

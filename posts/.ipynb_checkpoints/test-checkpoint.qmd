@@ -1,11 +1,12 @@
 ---
-title: "Day1: 실습 - 실습12"
+title: "Day1:test test test"
 author: "전현지"
 date: "01/08/2024"
 ---
-
-- 이거슨 그냥 그냥 저냥 ㅎㅎ..
+hangeul lee an dae yo...
+whyaron...
+한글이 깨져요
 
 ```{r}
-c(1,2,3)
+c(1,2,3,4)
 ```

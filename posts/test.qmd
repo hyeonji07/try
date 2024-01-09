@@ -1,7 +1,13 @@
 ---
 title: "Day1:test test test"
-author: "hyeonji"
+author: "전현지"
 date: "01/08/2024"
 ---
 hangeul lee an dae yo...
-whyaron...
+whyaron..i
+한글이 깨져요
+
+```{r}
+c(1,2,3,4)
+```
+vi 로 수정한 한글 깨질까?
